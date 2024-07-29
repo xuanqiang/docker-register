@@ -27,7 +27,7 @@ jobs:
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.getcollate.io/openmetadata/db:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/db:1.4.5
-         skopeo copy docker://docker.elastic.co/elasticsearch/elasticsearch:8.10.2 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/elasticsearch:8.10.2
-         skopeo copy docker://docker.getcollate.io/openmetadata/server:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/server:1.4.5
-         skopeo copy docker://docker.getcollate.io/openmetadata/ingestion:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/ingestion:1.4.5
+         skopeo copy docker://docker.io/openmetadata/db:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/db:1.4.5
+         skopeo copy docker://docker.io/elasticsearch/elasticsearch:8.10.2 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/elasticsearch:8.10.2
+         skopeo copy docker://docker.io/openmetadata/server:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/server:1.4.5
+         skopeo copy docker://docker.io/openmetadata/ingestion:1.4.5 docker://registry.cn-hangzhou.aliyuncs.com/xuaq_hub/ingestion:1.4.5
